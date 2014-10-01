@@ -36,7 +36,7 @@ module Sass::Script::Functions
     Sass::Script::Number.new(b)
   end
   def lcm(a, b)
-    result = (a.value * b.value) / gcd(a, b)
+    result = (a.value * b.value) / gcd(a, b).to_i
     Sass::Script::Number.new(result)
   end
 end
