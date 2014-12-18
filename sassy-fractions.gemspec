@@ -22,6 +22,6 @@ Gem::Specification.new do |s|
   s.files = Dir.glob("lib/**/*.*")
   
   # Dependent Gems
-  #s.add_dependency("compass",         [">= 0.13.alpha.0"])
-  #s.add_dependency("fraction",        [">=0.3.2"])
+  s.add_dependency("compass",         [">= 0.13.alpha.0"])
+  s.add_dependency("fraction",        [">=0.3.2"])
 end
