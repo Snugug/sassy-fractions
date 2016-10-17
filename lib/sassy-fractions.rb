@@ -27,4 +27,16 @@ module Sass::Script::Functions
     fraction = fraction.value.to_f
     Sass::Script::Number.new(fraction)
   end
+  # From http://coryodaniel.com/index.php/2009/12/30/ruby-and-numbers-scaling-greatest-common-denominator-least-common-multiple/
+  def gcd(a, b)
+    a = a.value
+    b = b.value
+    a,b = b,a if a < b
+    a,b = b,a%b while a%b != 0
+    Sass::Script::Number.new(b)
+  end
+  def lcm(a, b)
+    result = (a.value * b.value) / gcd(a, b).to_i
+    Sass::Script::Number.new(result)
+  end
 end
