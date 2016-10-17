@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.date = "2012-08-21"
   s.description = "Fractions for Sass (lcm fix by @iamsisar)"
   s.email = ["snugug@gmail.com"]
-  s.files = ["lib/sassy-fractions.rb"]
+  #s.files = ["lib/sassy-fractions.rb"]
   s.homepage = "https://github.com/iamsisar/sassy-fractions"
   s.rubyforge_project = "sassy-fractions-fix"
   s.rubygems_version = "2.4.1"
